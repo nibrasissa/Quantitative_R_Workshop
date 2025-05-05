@@ -104,6 +104,160 @@
   </style>
 </head>
 <body>
-  <!-- HTML content omitted for brevity in Python code -->
+  <nav>
+    <a onclick="showSection('info')">Info</a>
+    <a onclick="showSection('schedule')">Schedule</a>
+    <a onclick="showSection('day1')">Day 1</a>
+    <a onclick="showSection('day2')">Day 2</a>
+    <a onclick="showSection('day3')">Day 3</a>
+    <a onclick="showSection('requirements')">Setup</a>
+    <a onclick="showSection('faq')">FAQ</a>
+    <a onclick="showSection('quiz')">Quiz</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('register')">Register</a>
+  </nav>
+  <header>
+    <h1>Quality Research- Quantitative Research Data Analysis Using R</h1>
+    <p>3-Day Professional Workshop</p>
+  </header>
+  <main>
+    <section id="info" class="active">
+      <h2>Workshop Information</h2>
+      <p><strong>Instructor:</strong> Nabras Al-Mahrami (nabras.almahrami@ochs.edu.om)</p>
+      <p><strong>Location:</strong> Sultan Qaboos Grand Mosque</p>
+      <p><strong>Date:</strong> 6th to 8th May 2025</p>
+    </section>
+
+    <section id="schedule">
+      <h2>Workshop Schedule</h2>
+      <table>
+        <thead><tr><th>Day</th><th>Topic</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td>Day 1</td><td>Introduction to R</td><td>08:00 - 12:30</td></tr>
+          <tr><td>Day 2</td><td>Data Manipulation</td><td>08:30 - 15:00</td></tr>
+          <tr><td>Day 3</td><td>Inferential Statistics</td><td>08:30 - 15:00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="day1">
+  <h2>Day 1: Introduction to R and Basic Data Handling</h2>
+  <p><strong>Learning Objectives:</strong> Understand R basics, explore data, and create simple plots.</p>
+  <ul>
+    <li>What is R and RStudio?</li>
+    <li>Basic data types and syntax</li>
+    <li>Data import and exploration</li>
+    <li>Basic plots: bar, histogram, boxplot</li>
+    <li><a href="https://docs.google.com/presentation/d/1B_xFUADF2lW3JmTm_9ee3eK9WcOZDwoz/edit?usp=sharing&ouid=114854497806244359784&rtpof=true&sd=true" target="_blank">Download Slides</a> | <a href="#">Code Files</a></li>
+  </ul>
+</section>
+
+    <section id="day2">
+  <h2>Day 2: Data Manipulation and Descriptive Statistics</h2>
+  <p><strong>Learning Objectives:</strong> Learn data cleaning, transformation, and descriptive analysis.</p>
+  <ul>
+    <li>dplyr and tidyr packages</li>
+    <li>Filtering, transforming, summarizing</li>
+    <li>Missing data handling</li>
+    <li>ggplot2 visualizations</li>
+    <li><a href="https://docs.google.com/presentation/d/1HgTTA9B6y-BO5lbCmWE5JqXoW_g5rIBA/edit?usp=sharing&ouid=114854497806244359784&rtpof=true&sd=true" target="_blank">Download Slides</a> | <a href="#">Code Files</a></li>
+  </ul>
+</section>
+
+    <section id="day3">
+  <h2>Day 3: Inferential Statistics and Reporting</h2>
+  <p><strong>Learning Objectives:</strong> Perform statistical tests and generate professional reports.</p>
+  <ul>
+    <li>Statistical tests: t-test, chi-square, ANOVA</li>
+    <li>Correlation and regression</li>
+    <li>Using RMarkdown for reporting</li>
+    <li><a href="https://docs.google.com/presentation/d/15njn1ZFLKxl1gED19p6kdSgx4Lj4HdGf/edit?usp=sharing&ouid=114854497806244359784&rtpof=true&sd=true" target="_blank">Download Slides</a> | <a href="#">Code Files</a></li>
+  </ul>
+</section>
+
+    <section id="requirements">
+      <h2>Software Requirements</h2>
+      <ul>
+        <li>R version 4.2 or later</li>
+        <li>RStudio Desktop</li>
+        <li>Install: tidyverse, ggplot2, readr, dplyr</li>
+        <li><a href="https://drive.google.com/file/d/1ujA4Gd7cKJy0os1VnjWdc-o7GuPtVwar/view?usp=sharing" target="_blank">Installation Guide</a></li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><strong>Do I need prior R experience?</strong> No, the workshop is beginner-friendly.</li>
+        <li><strong>Will I get a certificate?</strong> Yes, participants who attend all sessions will receive a certificate.</li>
+        <li><strong>Is the workshop in-person?</strong> No, this workshop for group base</li>
+      </ul>
+    </section>
+
+    <section id="quiz">
+      <h2>Pre/Post Workshop Quiz</h2>
+      <p>Please complete the quiz before and after the workshop to measure your progress.</p>
+      <p><a href="#">Take the Quiz</a></p>
+    </section>
+
+    <section id="projects">
+      <h2>Example Projects & Case Studies</h2>
+      <ul>
+        <li><a href="#">COVID-19 Data Analysis with R</a></li>
+        <li><a href="#">Sales Trend Visualization Project</a></li>
+        <li><a href="#">Simple Linear Regression on Health Data</a></li>
+      </ul>
+    </section>
+
+    
+
+    <section id="register">
+  <h2>Register Now</h2>
+  <form onsubmit="handleSubmit(event)" style="max-width: 500px; margin-top: 20px;">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="affiliation">Affiliation:</label><br>
+    <input type="text" id="affiliation" name="affiliation" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="specialty">Specialty:</label><br>
+    <input type="text" id="specialty" name="specialty" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 20px;"><br>
+
+    <button type="submit" style="padding: 10px 20px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+  </form>
+  <p id="confirmation" style="color: green; margin-top: 15px;"></p>
+</section>
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const affiliation = document.getElementById('affiliation').value;
+    const specialty = document.getElementById('specialty').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    // Simulated action – in real case, send to server or Google Forms API
+    document.getElementById('confirmation').innerHTML = `<strong>Thank you, ${name}!</strong><br>Your registration has been successfully received. We look forward to welcoming you to the workshop.`;
+    event.target.reset();
+  }
+</script>
+  </main>
+  <footer>
+    &copy; 2025 Nabras Al-Mahrami. Designed for educational purposes.
+  </footer>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('main section').forEach(s => s.classList.remove('active'));
+      const section = document.getElementById(id);
+      if (section) section.classList.add('active');
+    }
+    window.onload = () => showSection('info'); // Default to Info page
+  </script>
 </body>
 </html>
